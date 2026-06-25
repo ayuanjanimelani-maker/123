@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pembelajaran Limit Matematika</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<section id="loginPage">
+
+    <div class="login-box">
+
+        <h1>PEMBELAJARAN LIMIT</h1>
+
+        <p>
+            Silakan isi data terlebih dahulu
+        </p>
+
+        <input type="text" id="nama" placeholder="Masukkan Nama">
+
+        <input type="text" id="npm" placeholder="Masukkan NPM">
+
+        <input type="text" id="kelas" placeholder="Masukkan Kelas">
+
+        <button onclick="masukWebsite()">
+            Masuk
+        </button>
+
+    </div>
+
+</section>
+
+<!-- DASHBOARD -->
+<section id="homePage">
+
+    <header>
+
+        <h1>
+            WEBSITE PEMBELAJARAN LIMIT
+        </h1>
+
+        <p id="dataUser"></p>
+
+    </header>
+
+    <nav>
+
+        <button onclick="bukaMenu('materi')">
+            Materi
+        </button>
+
+        <button onclick="bukaMenu('kalkulator')">
+            Kalkulator
+        </button>
+
+        <button onclick="bukaMenu('soal')">
+            Latihan Soal
+        </button>
+
+        <button onclick="bukaMenu('profil')">
+            Profil Pembuat
+        </button>
+
+    </nav>
+
+    <!-- MATERI -->
+    <section id="materi" class="menuContent">
+
+        <h2>Materi Limit</h2>
+
+        <h3>Pengertian Limit</h3>
+
+        <p>
+            Limit adalah nilai yang didekati suatu fungsi ketika variabel
+            mendekati suatu nilai tertentu.
+        </p>
+
+        <h3>Jenis-Jenis Limit</h3>
+
+        <ul>
+            <li>Limit Aljabar</li>
+            <li>Limit Trigonometri</li>
+            <li>Limit Tak Hingga</li>
+            <li>Limit Sepihak</li>
+        </ul>
+
+        <h3>Sumber</h3>
+
+        <p>
+            Buku Matematika SMA/MA Kelas XI Kurikulum Merdeka,
+            Kemendikbud RI.
+        </p>
+
+    </section>
+
+    <!-- KALKULATOR -->
+    <section id="kalkulator" class="menuContent">
+
+        <h2>Kalkulator Limit</h2>
+
+        <input
+            type="text"
+            id="fungsi"
+            placeholder="Contoh: (x*x-4)/(x-2)"
+        >
+
+        <input
+            type="number"
+            id="nilaiX"
+            placeholder="Nilai x mendekati"
+        >
+
+        <button onclick="hitungLimit()">
+            Hitung
+        </button>
+
+        <button onclick="resetKalkulator()">
+            Reset
+        </button>
+
+        <div id="hasilKalkulator">
+
+            Hasil perhitungan akan muncul di sini.
+
+        </div>
+
+    </section>
+
+    <!-- LATIHAN SOAL -->
+    <section id="soal" class="menuContent">
+
+        <h2>Latihan Soal</h2>
+
+        <div id="daftarSoal">
+
+            <!-- Soal akan dibuat oleh JavaScript -->
+
+        </div>
+
+        <button onclick="cekJawaban()">
+            Selesai Mengerjakan
+        </button>
+
+        <div id="hasilSoal"></div>
+
+    </section>
+
+    <!-- PROFIL -->
+    <section id="profil" class="menuContent">
+
+        <h2>Profil Pembuat</h2>
+
+        <p>
+            <strong>Mahasiswa :</strong><br>
+            Melani Ayu Anjani<br>
+            202557202010
+        </p>
+
+        <p>
+            <strong>Dosen Pengampu :</strong><br>
+            Dr. Kamariah, S.Pd., M.Pd.
+        </p>
+
+        <p>
+            <strong>Program Studi :</strong><br>
+            Sistem Informasi
+        </p>
+
+        <p>
+            <strong>Fakultas :</strong><br>
+            Fakultas Teknik
+        </p>
+
+        <p>
+            <strong>Universitas :</strong><br>
+            Universitas Musamus Merauke
+        </p>
+
+    </section>
+
+    <footer>
+
+        © 2026 Melani Ayu Anjani (202557202010)
+        | Dr. Kamariah, S.Pd., M.Pd.
+        | Sistem Informasi
+        | Fakultas Teknik
+        | Universitas Musamus Merauke
+
+    </footer>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
